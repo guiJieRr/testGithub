@@ -256,6 +256,19 @@ extension Double {
     var ft: Double {return self / 3.28084 }
 }
 
+
+extension String {
+    var devide: String {
+        return self + ".com"
+    }
+}
+
+
+let ouy = "2574".devide
+
+
+
+
 let oneInch = 25.4.cm
 print(oneInch)
 let therrFeet = 3.ft
@@ -283,11 +296,15 @@ extension Int {
     mutating func square() {
         self = self * self
     }
+    var double : Int {
+        return self * 2
+    }
 }
 
 var someInt = 3
 someInt.square()
 
+let sopuy = 8.double
 
 
 var opy = 5
@@ -327,5 +344,9 @@ func maxOfInput<T: Comparable>(x: T, _ y: T) -> T{
 }
 
 maxOfInput(56, 87)
+
+
+
+
 
 
